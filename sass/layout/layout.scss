@@ -1,0 +1,30 @@
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 5rem;
+}
+
+.row {
+    min-width: 25%;
+    margin: 1rem;
+}
+
+.row_random {
+    flex-grow: 1;
+    max-width: 40%;
+    min-width: 40%;
+    };
+    
+
+.row_1 {
+flex-grow: 1;
+max-width: 40%;
+min-width: 40%;
+};
+
+.row_2 {
+    flex-grow: 1;
+    max-width: 40%;
+    min-width: 40%;
+    };
