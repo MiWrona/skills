@@ -7,6 +7,12 @@
     box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
     max-width: 23%;
     transition: transform .3s;
+
+    @include respond(phone) { 
+        max-width: 80%;
+        margin-bottom: 2rem;;
+    }
+  
     
 
     &__icon {

@@ -1,0 +1,62 @@
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 5rem;
+
+    // @include respond(tab-port) { 
+    //     display: block;
+    //     text-align: center;
+    // }
+
+    // @include respond(phone) { 
+    //     display: block;
+    //     text-align: center;
+    // }
+}
+
+.row {
+    min-width: 30%;
+    margin: 1rem;
+    
+    @include respond(tab-port) { 
+        min-width: 30%;
+        margin: 1rem;
+        display: block;
+    }
+
+    @include respond(phone) { 
+        min-width: 70%;
+        margin: 2rem;
+        display: block;
+    }
+}
+
+.row_random {
+    flex-grow: 1;
+    max-width: 40%;
+    min-width: 40%;
+    };
+    
+
+.row_1 {
+flex-grow: 1;
+max-width: 40%;
+min-width: 40%;
+
+@include respond(phone) { 
+    max-width: 100%;
+    min-width: 100%;
+}
+};
+
+.row_2 {
+    flex-grow: 1;
+    max-width: 40%;
+    min-width: 40%;
+
+    @include respond(phone) { 
+        max-width: 100%;
+        min-width: 100%;
+    }
+    };

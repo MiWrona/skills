@@ -10,9 +10,31 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
         
-        <title>Natours | Exciting tours for adventurous people</title>
+        <title>Wrona | Skills</title>
     </head>
     <body>
+        <div class="navigation">
+            <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+            <label for="navi-toggle"  class="navigation__button">
+                <span class="navigation__icon">&nbsp; </span>
+            </label>
+
+            <div class="navigation__background">&nbsp;</div>
+
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#" class="navigation__link">About I</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">About II</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">About III</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">About IV</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">About V</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+
         <header class="header"> 
              <div class="header__logo-box">
                  <img class="header__logo" src="img/logo-white.png" alt="logo">
@@ -22,7 +44,7 @@
                  <span class="heading-primary--main">Miłosz Wrona</span>
                  <span class="heading-primary--sub">Front-end Developer</span>
              </h1>
-                 <a href="#" class="btn btn--white btn--animated">Check my projects</a>
+                 <a href="#section-tours" class="btn btn--white btn--animated">Check my projects</a>
              </div>
             
         </header>
@@ -38,19 +60,37 @@
                     <div class="row_1">
                       <h3 class="heading-tertiary u-margin-bottom-small">Hello! My name is Milosz</h3>
                       <p class="paragraph">
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum similique, quos vel corporis suscipit id sapiente enim delectus ea totam quidem recusandae accusamus ipsa eaque nostrum maiores libero distinctio blanditiis?
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum similique, quos vel corporis
                       </p>
                       <h3 class="heading-tertiary u-margin-bottom-small">Do or do not, there is no try!</h3>
-                      <p class="paragraph">
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum similique, quos vel corporis suscipit id sapiente enim delectus
+                      <p class="paragraph"> 
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum similique, quos vel 
                       </p>
-                      <a href="#" class="btn-text">Learn more &rarr;</a>
+                      <a href="#popup" class="btn-text">Learn more &rarr;</a>
                     </div>
                     <div class="row_2">
                         <div class="composition">
-                            <img src="img/nat-1-large.jpg" alt="photo" class="composition__photo composition__photo--p1">
+                            <img srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w"
+                                 sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
+                                 alt="photo" 
+                                 class="composition__photo composition__photo--p1"
+                                 src="img/nat-1-large.jpg">
+
+                            <img srcset="img/nat-2.jpg 300w, img/nat-2-large.jpg 1000w"
+                                 sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
+                                 alt="photo" 
+                                 class="composition__photo composition__photo--p2"
+                                 src="img/nat-2-large.jpg">
+
+                            <img srcset="img/nat-3.jpg 300w, img/nat-3-large.jpg 1000w"
+                                 sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
+                                 alt="photo" 
+                                 class="composition__photo composition__photo--p3"
+                                 src="img/nat-3-large.jpg">
+
+                            <!-- <img src="img/nat-1-large.jpg" alt="photo" class="composition__photo composition__photo--p1">
                             <img src="img/nat-2-large.jpg" alt="photo" class="composition__photo composition__photo--p2">
-                            <img src="img/nat-3-large.jpg" alt="photo" class="composition__photo composition__photo--p3">
+                            <img src="img/nat-3-large.jpg" alt="photo" class="composition__photo composition__photo--p3"> -->
                         </div>
                     </div>
                 </div>
@@ -92,7 +132,7 @@
             </div>
         </section> 
         
-        <section class="section-tours">
+        <section class="section-tours" id="section-tours">
             <div class="u-center-text u-margin-bottom-big">
                 <h2 class="heading-secondary">
                     Check my projects
@@ -102,10 +142,38 @@
                 <div class="row">
                     <div class="card">
                         <div class="card__side card__side--front">
-                                front
+                            <div class="card__picture card__picture--1">
+
+                                &nbsp;
+                            </div>
+                            <h4 class="card__heading">
+                                <span class="card__heading-span card__heading-span--1">Soon </span>
+                                
+
+                            </h4>
+                            <div class="card__details">
+                                <ul>
+                                    <li>HTML5</li>
+                                    <li>CSS3</li>
+                                    <li>JS</li>
+                                    <li>PHP</li>
+                                    
+                                </ul>
+                              
+                            </div>
+
+                            
                         </div>
                         <div class="card__side card__side--back card__side--back-1">
-                                bac
+                                <div class="card__cta">
+                                    <div class="card__price-box">
+                                        <p class="card__price-only">Soon</p>
+                                        <p class="card__price-value">Soon</p>
+                                    </div>
+                                    <a href="#popup" class="btn btn--white">Check portfolio!</a>
+
+
+                                </div>
                         </div>
                         
 
@@ -115,10 +183,38 @@
                 <div class="row">
                         <div class="card">
                             <div class="card__side card__side--front">
-                                    front
+                                <div class="card__picture card__picture--2">
+    
+                                    &nbsp;
+                                </div>
+                                <h4 class="card__heading">
+    
+                                        <span class="card__heading-span card__heading-span--2">Soon </span>
+                                
+                                </h4>
+                                <div class="card__details">
+                                        <ul>
+                                            <li>HTML5</li>
+                                            <li>CSS3</li>
+                                            <li>JS</li>
+                                            <li>PHP</li>
+                                            
+                                        </ul>
+                                      
+                                    </div>
+    
+                                
                             </div>
                             <div class="card__side card__side--back card__side--back-2">
-                                    bac
+                                    <div class="card__cta">
+                                        <div class="card__price-box">
+                                            <p class="card__price-only">Soon</p>
+                                            <p class="card__price-value">Soon</p>
+                                        </div>
+                                        <a href="#popup" class="btn btn--white">Check portfolio!</a>
+    
+    
+                                    </div>
                             </div>
                             
     
@@ -128,10 +224,37 @@
                     <div class="row">
                             <div class="card">
                                 <div class="card__side card__side--front">
-                                        front
+                                    <div class="card__picture card__picture--3">
+        
+                                        &nbsp;
+                                    </div>
+                                    <h4 class="card__heading">
+        
+                                            <span class="card__heading-span card__heading-span--3">Soon </span>
+                                    
+                                    </h4>
+                                    <div class="card__details">
+                                            <ul>
+                                                <li>HTML5</li>
+                                                <li>CSS3</li>
+                                                <li>JS</li>
+                                                <li>PHP</li>
+                                            </ul>
+                                          
+                                        </div>
+        
+                                    
                                 </div>
                                 <div class="card__side card__side--back card__side--back-3">
-                                        bac
+                                        <div class="card__cta">
+                                            <div class="card__price-box">
+                                                <p class="card__price-only">Soon</p>
+                                                <p class="card__price-value">Soon</p>
+                                            </div>
+                                            <a href="#popup" class="btn btn--white">Check portfolio!</a>
+        
+        
+                                        </div>
                                 </div>
                                 
         
@@ -140,9 +263,184 @@
 
             </div>
 
+            <div class="u-center-text u-margin-top-big">
+                    <a href="#popup" class="btn btn--green">Discover all projects</a>
+                </div>
+
         </section>
 
-        </main>
+        <section class="section-stories">
+            <div class="bg-video">
+                <video class="bg-video__content" autoplay muted loop>
+                    <source src="img/video.mp4" type="video/mp4">
+                    <source src="img/video.webm" type="video/webm">
+                        Your browser is not supported! Upgrade to XXI century
+                </video>
+            </div>
 
+                <div class="u-center-text u-margin-bottom-big">
+                        <h2 class="heading-secondary">
+                            Do we fit?
+                        </h2>
+                    </div>
+                <div class="row">
+                    <div class="story">
+                        <figure class="story__shape">
+                            <img src="img/nat-8.jpg" alt="face" class='story__img'>
+                            <figcaption class="story__caption">Dominika Gajda</figcaption>
+                        </figure>
+                        <div class="story__text">
+                            <h3 class="heading-tertiary u-margin-bottom-small"> Hello</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita a, soluta doloribus illo similique
+                                 inventore laboriosam. Ipsum temporibus qui facere, illo modi ab.
+                                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                  Expedita a, soluta doloribus illo similique inventore laboriosam. Ipsum temporibus qui facere, illo modi ab</p>
+                        </div>
+                    </div>
+
+
+                </div>   
+                <div class="row">
+                        <div class="story">
+                            <figure class="story__shape">
+                                <img src="img/nat-9.jpg" alt="face" class='story__img'>
+                                <figcaption class="story__caption">Maciek Wrona</figcaption>
+                            </figure>
+                            <div class="story__text">
+                                <h3 class="heading-tertiary u-margin-bottom-small"> Hello</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita a, soluta doloribus illo similique
+                                     inventore laboriosam. Ipsum temporibus qui facere, illo modi ab.
+                                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                      Expedita a, soluta doloribus illo similique inventore laboriosam. Ipsum temporibus qui facere, illo modi ab</p>
+                            </div>
+                        </div>
+    
+    
+                    </div>   
+                    <div class="u-center-text u-margin-top-big">
+                            <a href="#popup" class="btn-text">Check more stories &rarr;</a>
+                        </div>
+
+
+
+
+
+
+        </section>
+
+        <section class="section-book">
+            <div class="row">
+                <div class="book">
+                    <div class="book__form">
+                        <form action="#" class="form">
+                                <div class="u-margin-bottom-medium">
+                                <h2 class="heading-secondary">
+                                    Contact me now
+                                </h2> 
+                                </div>
+                            <div class="form__group">
+                                <input type="text" class="form__input" placeholder="Full Name" id="name" required>
+                                <label for="name" class="form__label">Full Name</label>
+                            </div>
+
+                            <div class="form__group">
+                                <input type="email" class="form__input" placeholder="Email address" id="email" required>
+                                <label for="email" class="form__label">Email address</label>
+                            </div>
+
+                            <div class="form__group u-margin-bottom-medium">
+                                <div class="form__radio-group">
+                                    <input type="radio" class="form__radio-input" id="small" name="size">
+                                    <label for="small" class="form__radio-label">
+                                        <span class="form__radio-button"></span>
+                                        Private
+                                    </label>
+                                </div>
+                                <div class="form__radio-group">
+                                    <input type="radio" class="form__radio-input" id="large" name="size">
+                                    <label for="large" class="form__radio-label">
+                                        <span class="form__radio-button"></span>
+                                        Company
+                                    </label>
+                                    </div>
+                            </div>
+                            <div class="form__group">
+                                <button class="btn btn--green">Next step &rarr; </button>
+                            </div>
+                        </form>
+                    </div>    
+                    
+                </div>
+
+
+            </div>
+
+        </section>
+        </main>
+        
+        <footer class="footer">
+            <div class="footer__logo-box">
+
+                    <picture class="footer__logo">
+                            <source srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x"
+                                    media="(max-width: 37.5em)">
+                            <img srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" alt="Full logo" src="img/logo-green-2x.png">
+                        </picture>
+               <!-- <img srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" alt="Full logo" class="footer__logo"> -->
+            </div>
+            <div class="footer__row">
+                <div class="footer__row-side--1">
+                    <div class="footer__navigation">
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="#" class="footer__link">Company</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Contact</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Projects</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Testimonials</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Terms</a></li>
+                    </ul>    
+                    </div>
+                </div>
+                <div class="footer__row-side--2">
+                    <p class="footer__copyright">
+                        Built my <a href="#" class="footer__link">Milosz Wrona</a>
+                        <a href="#" class="footer__link">Milosz Wrona</a>
+                        <a href="#" class="footer__link">Milosz Wrona</a>
+                        <a href="#" class="footer__link">Milosz Wrona</a>
+                        Copyright &copy; 
+                        Design by Jonas Schedtmann
+                    </p>
+                </div>
+            </div>    
+        </footer>
+
+
+        <div class="popup" id="popup">
+            <div class="popup__content">
+                <div class="popup__left">
+                    <img src="img/nat-8.jpg" alt="photo" class="popup__img">
+                    <img src="img/nat-9.jpg" alt="photo" class="popup__img">
+                </div>
+            <div class="popup__right">
+                <a href="#section-tours" class="popup__close">&times;</a>
+                    <h2 class="heading-secondary u-margin-bottom-small">Wow! CSS popup...</h2>
+                    <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; read these</h3>
+                    <p class="popup__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Accusantium neque minima unde velit repudiandae similique vitae,
+                          iste maiores quis adipisci dolor ab suscipit dolorem quidem magnam ullam?
+                         Obcaecati, esse et.
+                            &nbsp;
+                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Accusantium neque minima unde velit repudiandae similique vitae,
+                          iste maiores quis adipisci dolor ab suscipit dolorem quidem magnam ullam?
+                         Obcaecati, esse et.
+                    </p>
+                    <a href="#" class="btn btn--green">click now</a>
+            </div>
+
+               
+
+            </div>  
+        </div>
     </body>
 </html>
